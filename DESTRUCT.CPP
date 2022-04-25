@@ -1,26 +1,25 @@
-//program to demostrate destroucter
-// destroucter is used to release memory of object
-
+//program to demostrate using constructor & destructor
 #include<iostream.h>
 #include<conio.h>
-class Demo
- {
-   public:
-	Demo(); // constructorfun
-	~Demo(); //destructor fun
-
- };
- Demo::Demo()
-  {
-    cout<<"constructor called"<<endl;
-  }
- Demo::~Demo()
- {
- cout<<"destructor called"<<endl;
- }
-  void main()
+class demo
 {
- clrscr();
- Demo D;
- getch ();
+	public:
+		demo();
+	       ~demo();
+};
+demo::demo()
+	{
+	  cout<<"constructor called"<<endl;
+	}
+demo::~demo()
+	{
+	  cout<<"destructor called";
+	}
+void main()
+{
+   clrscr();
+
+   demo d;
+
+   getch();
 }

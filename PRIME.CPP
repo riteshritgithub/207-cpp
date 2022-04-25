@@ -1,39 +1,35 @@
 #include<iostream.h>
 #include<conio.h>
-class prime
+class primedemo
 {
-	private:
-		int n,f;
+	int n,f;
 	public:
 		void get();
 		void cal();
-	};
-void prime::get()
+};
+void primedemo::get()
 {
-	cout<<"\n Enter the number:\t";
+	cout<<"\n Enter number:";
 	cin>>n;
-	}
-void prime::cal()
+}
+void primedemo::cal()
 {
-	int f=1;
-	int i;
-	for(i=2;i<=n-1;i++)
+	f=1;
+	for(int i=2;i<=n-1;i++)
 	{
-	if(n%i==0)
-	{
-	f=0;
+		if(n%i==0)
+		f=0;
 	}
-}
 	if(f==0)
-	cout<<"\n the number is not prime:";
-	else
-	cout<<"\n the number is prime:";
-}
-	void main()
-	{
-	clrscr();
-	prime f1;
-	f1.get();
-	f1.cal();
-	getch();
+		cout<<"\n Number"<<n<<" is not prime";
+		else
+		cout<<"\n Number"<<n<<" is prime";
 	}
+void main()
+{
+	clrscr();
+	primedemo d;
+	d.get();
+	d.cal();
+	getch();
+}
